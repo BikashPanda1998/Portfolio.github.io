@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSIONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./image/logo.png" alt="LOGO" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <i class="icon" onclick="closemenu()">❌</i>
+                </ul>
+                <i class="icon" onclick="openmenu()" >📄</i>
+            </nav>
+            <div class="header_text">
+                <p>UX/UI DESIGN</p>
+                <h1>HI, I'm <span>Gourav</span>  <br> from Odisha</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------About---------------------->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col1">
+                    <img src="./image/profile2.jpg" alt="" srcset="">
+                </div>
+                <div class="about_col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur, repellendus labore laboriosam saepe, culpa alias odit corporis assumenda sapiente iste, eligendi optio consequatur quo autem blanditiis quibusdam!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interface</li>
+                            <li><span>java</span><br>software devlopement</li>
+                            <li><span>oracle</span><br> data base management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2 years</span><br>Designing web/app interface</li>
+                            <li><span>1 year</span><br>QA engineearing</li>
+                            <li><span>1.5 year</span><br>Testing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021</span><br>ITI in computer application</li>
+                            <li><span>2018</span><br>Bsc</li>
+                            <li><span>2015</span><br>+2 Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------Services------------------------------------>
+<div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+</div>
+<!----------------portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./image/slide (1).jpeg" alt="">
+                <div class="layer">
+                    <h3>Social media App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/slide (2).jpeg" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/slide (3).jpeg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti pariatur tenetur</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+<!---------------------------Contact section------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>cantact@yahoo.com</p>
+                <p>+91 9090324152</p>
+                <div class="social-icons">
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">lilnkedin</a>
+                </div>
+                <a href="./image/profile3.jpg" download class="btn btn2">Download</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------Copyright----------------------------------------------------->
+<div class="copyright">
+    <p>Copyright ©Gourav Made With <span>❤</span> by Easy Tuitorial6</p>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
